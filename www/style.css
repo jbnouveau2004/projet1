@@ -1,0 +1,574 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+@font-face {
+    font-family: 'dayrom';
+    src:    url('polices/dayrom.ttf') format('truetype'),
+            url('polices/dayrom.woff') format('woff'),
+            url('polices/dayrom.eot') format('eot'),
+            url('polices/dayrom.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ballpark';
+    src:    url('polices/ballpark.ttf') format('truetype'),
+            url('polices/ballpark.woff') format('woff'),
+            url('polices/ballpark.eot') format('eot'),
+            url('polices/ballpark.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(img/fond_jaune.png);
+}
+
+body{
+    overflow-x: hidden ;
+}
+
+
+header{
+    /* width: auto;
+    min-height: 100px; */
+}
+/*---------------------------------------AJOUT---------------------------------------*/
+
+.titre_principal{
+    text-align: left;
+}
+
+header li::before{
+    content:'';
+}
+
+header{
+    margin-bottom: 20px;
+}
+
+.img2 img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+        margin-left: -2px;
+        margin-right: -2px;
+        vertical-align: top;
+}
+
+.san img{
+    width: 915px;
+}
+
+header{
+    max-width: 915px;
+}
+
+.bloc{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+}
+.autre{
+    text-transform: none;
+    font-family: "ballpark";
+    font-style: italic;
+    font-size: 36px;
+}
+
+.titre_principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+main{
+    width: 910px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/*---------------------------------------AJOUT---------------------------------------*/
+
+h1 {
+    font-size: 18px;
+    font-family: "dayrom";
+    text-transform: uppercase;
+    text-align: left;
+}
+
+p{
+    padding: 5px;
+}
+
+article{
+    max-width: 640px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+.footer{
+    width: auto;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1.25fr 1.5fr 0.75fr 0.90fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titre1 titre2 titre3 titre3"
+    "contenu1_1 contenu2 contenu3_1 contenu3_2"
+    "contenu1_2 contenu2 contenu3_1 contenu3_2";
+}
+
+.titre1{
+    grid-area: titre1;
+    text-transform:uppercase;
+    font-size: 18px;
+    font-family: "dayrom";
+}
+
+.contenu1_1{
+    grid-area: contenu1_1;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.contenu1_2{
+    grid-area: contenu1_2;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.titre2{
+    grid-area: titre2;
+    text-transform:uppercase;
+    font-size: 18px;
+    font-family: "dayrom";
+}
+
+.contenu2{
+    grid-area: contenu2;
+}
+
+.titre3{
+    padding-left: 25px;
+    grid-area: titre3;
+    text-transform:uppercase;
+    font-size: 18px;
+    font-family: "dayrom";
+}
+
+.contenu3_1{
+    padding-left: 15px;
+    padding-top: 15px;
+    grid-area: contenu3_1;
+    color: #840400;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.contenu3_2{
+    padding-left: 15px;
+    padding-top: 15px;
+    grid-area: contenu3_2;
+    color: #840400;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+li::before{
+    content: url("img/ico_liensexterne.png")' ';
+}
+
+.contenu2 img{
+    border: 1px solid black;
+    margin: 1px;
+}
+
+footer img{
+    margin-left: -2px;
+    margin-right: -2px;
+    vertical-align: top;
+}
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------MAIN-------------------------------------------------*/
+
+
+main {
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    display: flex;
+    /* margin-bottom: 20px; */
+}
+article, aside{
+    text-align: justify;
+}
+article{
+    margin-right: 20px;
+    flex: 3;
+}
+#vitae{
+    color: red;
+    text-decoration: underline;
+}
+.ico_categorie{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+article p{
+    font-size: 1em;
+}
+aside{
+    /* width: 20%; */ width: 250px; height: 440px; display: flex; flex-direction: column; justify-content: space-around;
+    position: relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+#fleche_bulle{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+#photo_zozor{
+    text-align: center;
+}
+#photo_zozor img{
+    border: 1px solid #181818;
+}
+aside img{
+    /* margin-right: 5px; */
+    margin-right: 2px;
+}
+
+/*---------------------------------------------HEADER-------------------------------------------*/
+
+/* @font-face{
+    font-family: "ballpark" ;
+    src: url"site blog/Mini-projet-html-Zozor/polices/ballpark.ttf" format("truetype");
+} */
+/* body
+{
+    background-color: #FFF7DA;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+    font-family: Dayrom, serif;
+    margin-left: 5%;
+    margin-right: 5%;
+} */
+section h1, footer h1, nav a
+{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.logo h1{
+    font-family: "ballpark", sans-serif;
+}
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+/* .trait{
+    border:   solid rgb(145, 123, 86) 1px ;
+    margin-top: -70px;
+    opacity: 30%;
+} */
+.h
+{
+    font-size: 1.3em;
+    margin-top: 0px;
+    font-weight: normal;
+    font-family: "dayrom";
+}
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 0px;
+    justify-content: end;
+}
+nav li
+{
+    margin-right: 15px;
+}
+nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+nav a:hover
+{
+    color: #760001;
+    border-bottom: 3px solid #760001;
+}
+#san{
+    /* background-image:url("img/sanfrancisco.jpg"); */
+    /* background-size: cover; */
+    /* width: 95%; */
+    /* height: 300px; */
+    /* margin:2.5%;
+    position: relative; */
+    position: relative;
+    display: flex;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+}
+.banniere{
+    border-radius: 0px 0px 5px 5px;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+}
+.retour{
+    margin-left: 5px;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+.boutton{
+    margin-top: -28px;
+    margin-right: 10px;
+    padding-top: 5px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color:#830B0E ;
+    float: right;
+    /* margin-top: -38px; */
+    font-family: 'b';
+    background: linear-gradient(0deg, #821A19 ,#A66662 );
+}
+
+/* 
+@media(max-width:500px){
+    #san{
+        height: 200px;
+    }
+} */
+
+
+
+.container2{
+    position: absolute;
+
+}
+
+.menu{
+    visibility: hidden;
+    display: none;
+
+}
+
+#menu:target{
+    position: fixed;
+    z-index: 1000;
+    display: block;
+    left: 0;
+    top: 0;
+    visibility: visible;
+    width: 150px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7) ;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+
+
+
+/*--------------------------------------------- RESPONSIVE ----------------------------------------------------*/
+
+
+
+@media screen and (max-width: 950px){
+
+    footer, main, article{
+        width: 100%;
+        padding: 15px;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img{
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .img > :nth-child(1), .img > :nth-child(9)
+    {
+        display: none;
+    }
+
+    .img2{
+        display:flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .img2 > :nth-child(1), .img2 > :nth-child(9)
+    {
+        display: none;
+    }
+
+
+
+
+aside h1{text-align: center;grid-area: titre;}
+#photo_zozor{grid-area: photo;}
+aside p:nth-child(2), aside p:nth-child(3) {grid-area: texte;}
+.reso{text-align: center; grid-area: reso;}
+
+    aside{
+        padding: 15px;
+        width: 90vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 2fr;
+        grid-template-areas: 
+        "titre texte"
+        "photo texte"
+        "photo reso"
+        ;
+    }
+
+.burger{
+    background-image: url("img/burger.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    
+}
+
+nav ul{
+    display: none
+}
+
+
+.bord a{
+    color: white;
+    text-decoration: none;
+}
+
+.bord a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.bord a:active{
+    color: white;
+    text-decoration: none;
+}
+
+}
+.bord{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color:white;
+}
+
+.bord img{
+    margin-bottom: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.page{
+    position: absolute;
+    left: 150px;
+    top: 0px;
+    /* width: 100%;
+    height: 100vh; */
+} 
+
+header{
+    margin: 20px;
+}
+
+main{
+    margin-left: 20px;
+}
+
+}
+
+@media screen and (max-width: 700px){
+    .img > :nth-child(2), .img > :nth-child(8)
+    {
+        display: none;
+    }
+    .img2 > :nth-child(2), .img2 > :nth-child(8)
+    {
+        display: none;
+    }
+
+    .menu{
+        visibility: hidden;
+
+    }
+
+    #menu:target{
+        
+        visibility: visible;
+        width: 300px;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.1) ;
+    }
+}
+    
+@media screen and (max-width: 650px){
+
+    .contenu2{
+        margin: -10px;
+    }
+
+    .contenu1_1, .contenu1_2{
+        margin: 10px;
+    }
+
+    main{
+        /* margin-left: 25px; */
+    }
+}
